@@ -4,21 +4,21 @@
   }
   
   .header {
-    padding: 80px;
+    padding: 5vw;
     text-align: center;
     background-image: url("head.JPG");
     background-size: cover;
     color: black;
   }
   .header h1 {
-    font-size: 70px;
+    font-size: 5vw;
     background: cornsilk;
-    margin: 0px 400px 30px 0px;
+    margin: 0px 25% 30px 0px;
   }
   .header p {
     font-size: 40px;
     background: cornsilk;
-    margin: 50px 500px 30px 0px;
+    margin: 5vw 30% 3vw 0px;
   }
   
   .navbar {
@@ -30,7 +30,7 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 20px;
+    padding: 1.4vw 2vw;
   }
   .navbar a.right {
     float: right;
@@ -42,21 +42,20 @@
   
   .content {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .side {
-    flex: 31.5%;
+}
+.side {
+    flex: 0.3; /* 40% */
     background: cornsilk;
-    padding: 20px;
-  }
-  .main {
-    flex: 68.5%;
+    padding: 2vw;
+}
+.main {
+    flex: 0.7; /* 60% */
     background: ghostwhite;
-    padding: 20px;
-  }
+    padding: 2vw;
+}
   
   .footer {
-    padding: 20px;
+    padding: 2vw;
     text-align: center;
     background: rgb(255, 236, 159);
   }
@@ -67,26 +66,26 @@
   
   @media (max-width: 870px) {
     .header {
-      padding: 40px;
+      padding: 2vw;
       text-align: center;
       font-family: Helvetica;
-      font-size: 30px;
+      font-size: 3vw;
       background-repeat: no-repeat;
       background-size: 100%;
       color: black;
     }
   
     .header h1 {
-      font-size: 60px;
+      font-size: 6vw;
     }
   }
   
   @media (max-width: 750px) {
     .header {
-      padding: 40px;
+      padding: 2vw;
       text-align: center;
       font-family: Helvetica;
-      font-size: 30px;
+      font-size: 3vw;
       background-repeat: no-repeat;
       background-image: none;
       background-color: #ecfcff;
@@ -94,6 +93,30 @@
     }
   
     .header h1 {
-      font-size: 60px;
+      font-size: 6vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+    /* Add the hamburger icon */
+    .hamburger {
+        display: block;
+        font-size: 2em;
+        text-align: right;
+        cursor: pointer;
+    }
+    /* Add the navigation menu */
+    .nav-menu {
+        display: none;
+    }
+    /* Show the navigation menu when the hamburger icon is clicked */
+    .hamburger:hover + .nav-menu {
+        display: block;
+    }
+    /* Style the navigation menu */
+    .nav-menu a {
+        display: block;
+        margin: 10px 0;
     }
   }
